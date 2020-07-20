@@ -4,7 +4,7 @@ import tensorflow as tf
 import os
 import pickle
 import argparse
-import ipdb
+#import ipdb
 
 from social_utils import SocialDataLoader
 from social_model import SocialModel
