@@ -117,10 +117,10 @@ def main():
         # complete_traj is an array of shape (obs_length+pred_length) x maxNumPeds x 3
         total_error += get_mean_error(complete_traj, x[0], sample_args.obs_length, saved_args.maxNumPeds)
 
-        print "Processed trajectory number : ", b, "out of ", data_loader.num_batches, " trajectories"
+        print("Processed trajectory number : ", b, "out of ", data_loader.num_batches, " trajectories")
 
     # Print the mean error across all the batches
-    print "Total mean error of the model is ", total_error/data_loader.num_batches
+    print("Total mean error of the model is ", total_error/data_loader.num_batches)
 
 if __name__ == '__main__':
     main()
