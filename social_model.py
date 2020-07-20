@@ -10,7 +10,7 @@ import tensorflow as tf
 import numpy as np
 from tensorflow.python.ops import rnn_cell
 from grid import getSequenceGridMask
-import ipdb
+#import ipdb
 
 
 class SocialModel():
