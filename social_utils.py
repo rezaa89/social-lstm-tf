@@ -1,7 +1,7 @@
 import os
 import pickle
 import numpy as np
-import ipdb
+#import ipdb
 
 # The data loader class that loads data from the datasets considering
 # each frame as a datapoint and a sequence of consecutive frames as the
@@ -158,7 +158,7 @@ class SocialDataLoader():
         for dataset in range(len(self.data)):
             # get the frame data for the current dataset
             all_frame_data = self.data[dataset]
-            print len(all_frame_data)
+            print(len(all_frame_data))
             # Increment the counter with the number of sequences in the current dataset
             counter += int(len(all_frame_data) / (self.seq_length+2))
 
